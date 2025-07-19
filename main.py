@@ -33,6 +33,6 @@ not_guessed_states = {
     "states": not_guessed
 }
 data_states = pandas.DataFrame(not_guessed_states)
-data_states.to_csv("a.csv")
+data_states.to_csv("missing_states.csv")
 
 screen.exitonclick()
