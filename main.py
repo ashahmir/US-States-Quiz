@@ -24,11 +24,7 @@ while states_guessed < 50:
             turtle.goto(_x, _y)
             turtle.write(user_answer)
 
-not_guessed = []
-for state in data["state"]:
-    if state not in guessed_states:
-        not_guessed.append(state)
-
+not_guessed = [state for state in data["state"] if state not in guessed_states]
 not_guessed_states = {
     "states": not_guessed
 }
